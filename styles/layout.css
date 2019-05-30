@@ -55,18 +55,18 @@ body {
   }
 
 .headerText {
-  flex: 0 0 auto;
-  color: #808080;
+  flex: 0 1 auto;
+  color: #404040;
   font-weight: lighter;
   text-align: center;
 }
 
 .headerTextTitle {
-  font-size: 3em;
+  font-size: 4rem;
 }
 
 .headerTextSubTitle {
-  font-size: 1.5em;
+  font-size: 2rem;
 }
 
 .welcomeText {
