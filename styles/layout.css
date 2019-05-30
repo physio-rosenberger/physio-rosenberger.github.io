@@ -78,7 +78,7 @@ body {
 @media only screen and (orientation: portrait) {
   .welcome {
     flex-direction: column;
-    background-color: yellow;
+    /*background-color: yellow;*/
   }
 }
 
