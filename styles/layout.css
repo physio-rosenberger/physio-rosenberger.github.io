@@ -1,12 +1,22 @@
-﻿body {
-  width: 1000px;
+﻿* {
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 960px;
+}
+
+body {
   margin-left: auto;
   margin-right: auto;
   font-family: Calibri;
 }
 
 .headerlogo {
-  float: left;
   margin-right: 10px;
 }
 
@@ -19,27 +29,48 @@
   font-family: Calibri;
   /*text-shadow: 5px 5px 5px #5f2c17;*/
   color: #808080;
-  padding: 15px;
-  margin: 8px 0px;
+  /*padding: 15px;
+  margin: 8px 0px;*/
   font-weight: lighter;
 }
 
-#welcometext {
-  float: left;
-  width: 500px;
-  font-size: 12px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+.welcome {
+  margin: 20px 0 0 0;
+  padding: 0;
 }
 
-#welcomeimage {
-  float: right;
-  width: 390px;
+#welcometext {
+  text-align: center;
+  margin: 0px 20px;
 }
+
+#welcomeimage > img {
+  /*max-width: 200px;*/
+  width: auto;
+  height: auto;
+  max-height: 400px;
+}
+
+@media screen and (min-width: 800px) {
+  .welcome {
+    display: flex;
+    align-items: center;
+  }
+
+  #welcometext {
+    flex: 1;
+    order: 1;
+  }
+
+  #welcomeimage {
+    flex: 1;
+    order: 2;
+  }
+}
+
 footer {
-  clear: both;
   width: 100%;
   /*background-color: #5c5045;*/
-  margin: 20px 0px 20px;
-  padding: 5px;
+  /*margin: 20px 0px 20px;
+  padding: 5px;*/
 }
