@@ -74,11 +74,11 @@ body {
   text-align: center;
 }
 
-@media screen and (min-width: 800px) {
+/*@media screen and (min-width: 800px) {
   .welcome {
     flex-direction: row;
   }
-}
+}*/
 
 footer {
   width: 100%;
