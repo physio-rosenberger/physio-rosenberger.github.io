@@ -34,39 +34,35 @@ body {
   font-weight: lighter;
 }
 
+/*@media screen and (min-width: 800px) {*/
 .welcome {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   margin: 20px 0 0 0;
   padding: 0;
 }
 
 #welcometext {
+  flex: 1;
+  order: 1;
   text-align: center;
-  margin: 0px 20px;
+  min-width: 400px;
+  margin: 0px 20px 20px 0;
 }
 
-#welcomeimage > img {
-  /*max-width: 200px;*/
-  width: auto;
-  height: auto;
-  max-height: 400px;
+#welcomeimage {
+  flex: 1;
+  order: 2;
+  min-width: 200px;
 }
 
-@media screen and (min-width: 800px) {
-  .welcome {
-    display: flex;
-    align-items: center;
+  #welcomeimage > img {
+    /*max-width: 200px;*/
+    width: 100%;
+    /*max-width: 400px;*/
   }
 
-  #welcometext {
-    flex: 1;
-    order: 1;
-  }
-
-  #welcomeimage {
-    flex: 1;
-    order: 2;
-  }
-}
 
 footer {
   width: 100%;
