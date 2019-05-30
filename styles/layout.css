@@ -3,35 +3,17 @@
   margin: 0;
 }
 
-.container {
-  background: white;
-  margin: 0 auto;
-  padding: 1em;
-  max-width: 960px;
-}
-
 body {
   margin-left: auto;
   margin-right: auto;
   font-family: Calibri;
 }
 
-.headerlogo {
-  margin-right: 10px;
-}
-
-  .headerlogo > img {
-    height: 60px;
-  }
-
-#headername {
-  font-size: 40px;
-  font-family: Calibri;
-  /*text-shadow: 5px 5px 5px #5f2c17;*/
-  color: #808080;
-  /*padding: 15px;
-  margin: 8px 0px;*/
-  font-weight: lighter;
+.container {
+  background: white;
+  margin: 0 auto;
+  padding: 1em;
+  max-width: 960px;
 }
 
 /*@media screen and (min-width: 800px) {*/
@@ -43,25 +25,56 @@ body {
   padding: 0;
 }
 
-#welcometext {
+.welcomeLeft {
   flex: 1;
   order: 1;
-  text-align: center;
   min-width: 400px;
   margin: 0px 20px 20px 0;
 }
 
-#welcomeimage {
+.welcomeRight {
   flex: 1;
   order: 2;
-  min-width: 200px;
+  min-width: 400px;
 }
 
-  #welcomeimage > img {
-    /*max-width: 200px;*/
+  .welcomeRight > img {
     width: 100%;
-    /*max-width: 400px;*/
   }
+
+.welcomeHeader {
+  display: flex;
+}
+
+.headerLogo {
+  flex: 0;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+  .headerLogo > img {
+    height: 80px;
+  }
+
+.headerText {
+  flex: 0;
+  color: #808080;
+  font-weight: lighter;
+  text-align: center;
+}
+
+.headerTextTitle {
+  font-size: 50px;
+}
+
+.headerTextSubTitle {
+  font-size: 20px;
+}
+
+.welcomeText {
+  margin: 40px 0 0 0;
+  text-align: center;
+}
 
 
 footer {
