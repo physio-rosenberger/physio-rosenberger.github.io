@@ -14,6 +14,37 @@ body {
   max-width: 960px;
 }
 
+nav {
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 5px;
+  margin-top: 20px;
+}
+  nav ul {
+    list-style: none;
+    padding: 0px;
+  }
+
+    nav ul li {
+      display: block;
+    }
+
+  nav ul li a {
+    margin-right: 20px;
+    font-size: 1.2rem;
+    float: left;
+    padding-top: 0.5rem;
+    color: blue;
+    text-decoration: none;
+  }
+
+    nav ul li a.selected {
+      background: yellow;
+    }
+
+  /*.navlink.active {
+  }*/
+
 .welcome {
   display: flex;
   /*flex-wrap: wrap;*/
@@ -42,6 +73,7 @@ body {
 
 .welcomeHeader {
   display: flex;
+  justify-content: center;
 }
 
 .headerLogo {
@@ -87,4 +119,18 @@ footer {
   /*background-color: #5c5045;*/
   /*margin: 20px 0px 20px;
   padding: 5px;*/
+}
+
+.contact-Address {
+  text-align: left;
+  margin-left: 20px;
+}
+
+.map {
+  width: 50%;
+  margin-top: 20px;
+}
+
+#map {
+  height: 20rem;
 }

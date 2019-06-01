@@ -3,13 +3,14 @@
 <head>
   <meta charset="utf-8" />
   <title>Körperwerkstatt - Physiotherapie Daniela Rosenberger</title>
-  <link href="styles/layout.css" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+  <link href="styles/layout.css" rel="stylesheet" />
+  <link href="navigation.html" rel="import">
+  <script src="scripts/navigation.js"></script>
 </head>
 <body>
   <div class="container">
-
-    <!--<nav class="nav-main">(2) Navi</nav>-->
+    <div class="nav-include">To be replaced by the nav-main.</div>
 
     <div class="welcome">
       <div class="welcomeLeft">
@@ -45,8 +46,12 @@
     </div>
 
     <footer>
-      <p>V7 <address>Caesargasse 4, 8160 Weiz</address></p>
+      <address>(V9) Caesargasse 4, 8160 Weiz</address>
     </footer>
   </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", includeNavigation, false);
+  </script>
 </body>
 </html>
