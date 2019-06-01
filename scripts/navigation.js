@@ -6,14 +6,35 @@ function includeNavigation() {
   var placeHolder = document.querySelector('.nav-include');
   if (!placeHolder)
     return;
-  var navImport = document.querySelector('link[rel="import"]')
-  if (!navImport || ! navImport.import)
-    return;
-  var navElement = navImport.import.querySelector('.nav-main')
-  if (!navElement)
-    return;
+
+  //'<nav class="nav-main">',
+  //'</nav>'
+  var html = [
+    '<ul>',
+    '<li><a href="index.html">Start</a></li>',
+    '<li><a href="treatments.html">Leistungen und Preise</a></li>',
+    '<li><a href="contact.html">Kontakt</a></li>',
+    '</ul>'
+  ].join("\n");
+
+  var nav = document.createElement("nav");
+  nav.className = "nav-main";
+  nav.innerHTML = html;
+
   var parent = placeHolder.parentNode;
-  var navClone = document.importNode(navElement, true);
-  parent.insertBefore(navClone, placeHolder);
+  parent.insertBefore(nav, placeHolder);
   parent.removeChild(placeHolder);
+
+  return;
+
+  //var navImport = document.querySelector('link[rel="import"]')
+  //if (!navImport || ! navImport.import)
+  //  return;
+  //var navElement = navImport.import.querySelector('.nav-main')
+  //if (!navElement)
+  //  return;
+  //var parent = placeHolder.parentNode;
+  //var navClone = document.importNode(navElement, true);
+  //parent.insertBefore(navClone, placeHolder);
+  //parent.removeChild(placeHolder);
 }
