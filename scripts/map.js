@@ -6,7 +6,15 @@
 
 function showMap(lat, lng) {
   map = new OpenLayers.Map("map");
-  var mapnik = new OpenLayers.Layer.OSM();
+  var mapnik = new OpenLayers.Layer.OSM(
+    "OpenStreetMap",
+    // Official OSM tileset as protocol-independent URLs
+    [
+      '//a.tile.openstreetmap.org/${z}/${x}/${y}.png',
+      '//b.tile.openstreetmap.org/${z}/${x}/${y}.png',
+      '//c.tile.openstreetmap.org/${z}/${x}/${y}.png'
+    ],
+    null);
   map.addLayer(mapnik);
   var lonLat = new OpenLayers.LonLat(lng, lat)
     .transform(
