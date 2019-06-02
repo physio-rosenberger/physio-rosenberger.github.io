@@ -52,11 +52,19 @@
 
   <script>
     function showContainerSize() {
-      console.log("Size changed");
+      //console.log("Size changed");
       var sizeElem = document.querySelector('#containerSize');
-      var container = document.querySelector('.container');
-      sizeElem.querySelector('#containerWidth').innerText = container.clientWidth;
-      sizeElem.querySelector('#containerHeight').innerText = container.clientHeight;
+
+      var width = window.innerWidth
+        || document.documentElement.clientWidth
+        || document.body.clientWidth;
+
+      var height = window.innerHeight
+        || document.documentElement.clientHeight
+        || document.body.clientHeight;
+
+      sizeElem.querySelector('#containerWidth').innerText = width;
+      sizeElem.querySelector('#containerHeight').innerText = height;
     }
 
     showContainerSize();
