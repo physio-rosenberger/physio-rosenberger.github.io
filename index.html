@@ -46,12 +46,22 @@
     </div>
 
     <footer>
-      <address>(V11) Caesargasse 4, 8160 Weiz</address>
+      <div id="containerSize">Size: <span id="containerWidth"></span>,<span id="containerHeight"></span></div>
     </footer>
   </div>
 
   <script>
-    document.addEventListener("DOMContentLoaded", includeNavigation, false);
+    function showContainerSize() {
+      console.log("Size changed");
+      var sizeElem = document.querySelector('#containerSize');
+      var container = document.querySelector('.container');
+      sizeElem.querySelector('#containerWidth').innerText = container.clientWidth;
+      sizeElem.querySelector('#containerHeight').innerText = container.clientHeight;
+    }
+
+    showContainerSize();
+    document.addEventListener('DOMContentLoaded', includeNavigation, false);
+    window.addEventListener('resize', showContainerSize, false);
   </script>
 </body>
 </html>

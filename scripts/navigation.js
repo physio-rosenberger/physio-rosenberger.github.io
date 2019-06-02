@@ -26,15 +26,4 @@ function includeNavigation() {
   parent.removeChild(placeHolder);
 
   return;
-
-  //var navImport = document.querySelector('link[rel="import"]')
-  //if (!navImport || ! navImport.import)
-  //  return;
-  //var navElement = navImport.import.querySelector('.nav-main')
-  //if (!navElement)
-  //  return;
-  //var parent = placeHolder.parentNode;
-  //var navClone = document.importNode(navElement, true);
-  //parent.insertBefore(navClone, placeHolder);
-  //parent.removeChild(placeHolder);
 }

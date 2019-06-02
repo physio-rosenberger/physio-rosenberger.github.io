@@ -5,20 +5,19 @@
 
 body {
   font-family: Quicksand, Helvetica;
+  color: #404040;
 }
 
 .container {
   background: white;
   margin: 0 auto;
   padding: 1em;
-  max-width: 960px;
+  max-width: 600px;
 }
 
 nav {
-  height: 2.5rem;
+  height: 2rem;
   width: 100%;
-  margin-bottom: 5px;
-  margin-top: 20px;
 }
   nav ul {
     list-style: none;
@@ -33,7 +32,6 @@ nav {
     margin-right: 20px;
     font-size: 1.2rem;
     float: left;
-    padding-top: 0.5rem;
     color: blue;
     text-decoration: none;
   }
@@ -48,7 +46,7 @@ nav {
 .welcome {
   display: flex;
   /*flex-wrap: wrap;*/
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   margin: 20px 0 0 0;
   padding: 0;
@@ -88,7 +86,6 @@ nav {
 
 .headerText {
   flex: 0 1 auto;
-  color: #404040;
   font-weight: lighter;
   text-align: center;
 }
@@ -106,19 +103,9 @@ nav {
   text-align: center;
 }
 
-/*@media screen and (max-width: 2000px) {*/
-@media only screen and (orientation: portrait) {
-  .welcome {
-    flex-direction: column;
-    /*background-color: yellow;*/
-  }
-}
-
 footer {
   width: 100%;
-  /*background-color: #5c5045;*/
-  /*margin: 20px 0px 20px;
-  padding: 5px;*/
+  font-size: 0.8rem;
 }
 
 .contact-Address {
@@ -133,4 +120,16 @@ footer {
 
 #map {
   height: 20rem;
+}
+
+/*@media screen and (max-width: 2000px) {*/
+@media only screen and (orientation: landscape) {
+  .container {
+    max-width: 960px;
+  }
+
+  .welcome {
+    flex-direction: row;
+    /*background-color: yellow;*/
+  }
 }
