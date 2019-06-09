@@ -12,8 +12,12 @@ function includeNavigation() {
   var html = [
     '<ul>',
     '<li><a href="index.html">Start</a></li>',
-    '<li><a href="treatments.html">Leistungen und Preise</a></li>',
-    '<li><a href="contact.html">Kontakt</a></li>',
+    '<li><a href="Leistungen.html">Leistungen und Preise</a></li>',
+    '<li><a href="Schwerpunkte.html">Schwerpunkte</a></li>',
+    '<li><a href="Praxis.html">Meine Praxis</a></li>',
+    '<li><a href="UeberMich.html">Über mich</a></li>',
+    '<li><a href="Kontakt.html">Kontakt</a></li>',
+    '<li><a href="Informationen.html">Informationen</a></li>',
     '</ul>'
   ].join("\n");
 
