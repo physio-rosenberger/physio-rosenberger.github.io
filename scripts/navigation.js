@@ -31,7 +31,7 @@ function includeNavigation() {
 
   // Set the current page "active".
   var currentPage = location.pathname;
-  console.log("currentPage=" + currentPage);
+  //console.log("currentPage=" + currentPage);
   var ul = nav.firstChild;
   var items = ul.getElementsByTagName("li");
 
@@ -40,7 +40,7 @@ function includeNavigation() {
     var link = item.getElementsByTagName("a")[0];
     var n = link.href.lastIndexOf('/');
     var url = link.href.substring(n);
-    console.log("href=" + url);
+    //console.log("href=" + url);
 
     if (url == currentPage) {
       item.id = "selected";
