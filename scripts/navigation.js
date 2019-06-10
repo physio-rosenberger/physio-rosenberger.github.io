@@ -29,5 +29,24 @@ function includeNavigation() {
   parent.insertBefore(nav, placeHolder);
   parent.removeChild(placeHolder);
 
+  // Set the current page "active".
+  var currentPage = location.pathname;
+  console.log("currentPage=" + currentPage);
+  var ul = nav.firstChild;
+  var items = ul.getElementsByTagName("li");
+
+  for (var i = 0; i < items.length; i++) {
+    var item = items[i];
+    var link = item.getElementsByTagName("a")[0];
+    var n = link.href.lastIndexOf('/');
+    var url = link.href.substring(n);
+    console.log("href=" + url);
+
+    if (url == currentPage) {
+      item.id = "selected";
+      break;
+    }
+  }
+
   return;
 }

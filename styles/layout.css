@@ -9,13 +9,30 @@ p {
 
 h1 {
   margin-top: 1.5em;
+  font-size: 1.5rem;
+  clear: both;
 }
 
 h2 {
   margin-top: 1em;
+  font-size: 1.2rem;
+  clear: both;
+}
+
+table {
+  clear: both;
+}
+
+tr {
+  vertical-align: text-top;
+}
+
+td {
+  padding: 0.5em 0.4em 0 0.4em
 }
 
 .container {
+  -webkit-text-size-adjust: 100%; /* do not scale text when changing orientation */
   font-family: Quicksand, Helvetica;
   color: #404040;
   background: white;
@@ -24,32 +41,30 @@ h2 {
 }
 
 nav {
-  height: 2em;
   width: 100%;
+  font-size: 1rem;
 }
+
   nav ul {
     list-style: none;
-    padding: 0px;
   }
 
     nav ul li {
       display: block;
     }
 
-  nav ul li a {
-    margin-right: 20px;
-    font-size: 1.2em;
-    float: left;
-    color: blue;
-    text-decoration: none;
-  }
+      nav ul li a {
+        padding: 0.2em 0.6em;
+        font-size: 1.2em;
+        float: left;
+        color: blue;
+        text-decoration: none;
+      }
 
-    nav ul li a.selected {
-      background: yellow;
-    }
-
-  /*.navlink.active {
-  }*/
+      nav ul li#selected a {
+        background: yellow;
+        color: darkblue;
+      }
 
 .welcome {
   display: flex;
@@ -133,7 +148,7 @@ footer {
 }
 
 .wrappingText {
-  clear: both;
+  width: 100%;
   float: left;
 }
 
@@ -141,10 +156,6 @@ footer {
   width: 100%;
   clear: both;
   float: left;
-}
-
-.flowText td {
-  padding: 0.8em 0.4em 0 0
 }
 
 .wrappedImage {
