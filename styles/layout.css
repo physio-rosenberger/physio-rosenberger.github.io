@@ -59,6 +59,7 @@ nav {
 
   nav a {
     padding-top: 0.2em;
+    padding-left: 0.6em;
     padding-right: 0.6em;
     font-size: 1.2em;
     float: left;
@@ -76,9 +77,14 @@ nav {
     display: none;
   }
 
-    nav li:last-child a {
-      padding-right: 0;
-    }
+  nav li:first-child a {
+    padding-left: 0;
+  }
+
+  nav li:last-child a {
+    padding-left: 0;
+    padding-right: 0;
+  }
 
   nav li#selected a {
     background: yellow;
@@ -112,7 +118,7 @@ nav {
 .welcomeLeft {
   flex: 1;
   order: 1;
-  margin: 0px 40px 20px 0;
+  margin-bottom: 1em;
 }
 
 .welcomeRight {
@@ -237,10 +243,14 @@ span.firstPriceColumn {
   .welcome {
     flex-direction: row;
   }
-}
 
-@media only screen and (orientation: landscape) {
+  .welcomeLeft {
+    margin-right: 2em;
+  }}
+
+/*@media only screen and (orientation: landscape) {
   .welcome {
     flex-direction: row;
   }
-}
+}*/
+
