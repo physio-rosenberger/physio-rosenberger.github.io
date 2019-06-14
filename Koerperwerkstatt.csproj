@@ -5,16 +5,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Praxis.html" />
-    <None Remove="Schwerpunkte.html" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Compile Include="Praxis.html" />
-    <Compile Include="Schwerpunkte.html" />
-  </ItemGroup>
-
-  <ItemGroup>
     <Folder Include="Properties\" />
   </ItemGroup>
 

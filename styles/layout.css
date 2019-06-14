@@ -31,8 +31,12 @@ td {
   padding: 0.5em 0.4em 0 0.4em
 }
 
-body {
-  -webkit-text-size-adjust: 100%; /* do not scale text when changing orientation */
+html, body {
+  text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  -moz-text-size-adjust: none;
+  -ms-text-size-adjust: none;
+  /*-webkit-text-size-adjust: 100%;*/ /* do not scale text when changing orientation */
 }
 
 .container {
@@ -48,31 +52,48 @@ nav {
   font-size: 1rem;
 }
 
+  /* By default hide all nav buttons except "Start" and the drop-down */
+  nav li:not(:first-child) {
+    /*display: none;*/
+  }
+
+  nav li.dropDownBtn {
+    float: right;
+    display: block;
+  }
+
   nav ul {
     list-style: none;
   }
 
-    nav ul li {
-      display: block;
-    }
+  nav a {
+    padding: 0.2em 0.6em;
+    font-size: 1.2em;
+    float: left;
+    color: blue;
+    text-decoration: none;
+  }
 
-      nav ul li a {
-        padding: 0.2em 0.6em;
-        font-size: 1.2em;
-        float: left;
-        color: blue;
-        text-decoration: none;
-      }
+  nav li#selected a {
+    background: yellow;
+    color: darkblue;
+  }
 
-      nav ul li#selected a {
-        background: yellow;
-        color: darkblue;
-      }
+  nav a:hover {
+    background: lightyellow;
+    color: darkblue;
+  }
 
-      nav ul li a:hover {
-        background: lightyellow;
-        color: darkblue;
-      }
+  /*nav.allItems {
+    position: relative;
+  }*/
+
+  /*nav a.dropDownBtn {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }*/
+
 .welcome {
   display: flex;
   /*flex-wrap: wrap;*/
@@ -198,7 +219,16 @@ span.firstPriceColumn {
 @media only screen and (min-width: 1000px) {
   .container {
     max-width: 960px;
-    font-size: 16px;
+  }
+
+  /* Show all menu buttons. */
+  nav li:not(:first-child) {
+    display: block;
+  }
+
+  /* Hide the drop-down. */
+  nav li.dropDownBtn {
+    display: none;
   }
 
   .welcome {

@@ -1,4 +1,14 @@
-﻿////
+﻿function openMenu() {
+  console.log("Open menu");
+  var nav = document.getElementById("nav-main");
+  if (nav.className === "") {
+    nav.className = "allItems";
+  } else {
+    nav.className = "";
+  }
+}
+
+////
 // Replace the placeholder for the navigation element by the imported 'nav-main' element.
 // The placeholder needs to have class "nav-include".
 //
@@ -18,11 +28,12 @@ function includeNavigation() {
     '<li><a href="UeberMich.html">Über mich</a></li>',
     '<li><a href="Kontakt.html">Kontakt</a></li>',
     '<li><a href="Informationen.html">Informationen</a></li>',
+    '<li class="dropDownBtn"><a href="javascript:void(0);" onclick="openMenu()">&#9776;</a></li>',
     '</ul>'
   ].join("\n");
 
   var nav = document.createElement("nav");
-  nav.className = "nav-main";
+  nav.id = "nav-main";
   nav.innerHTML = html;
 
   var parent = placeHolder.parentNode;
