@@ -225,6 +225,11 @@ span.firstPriceColumn {
   width: 16em;
 }
 
+.fitFirstColumn td:first-child {
+  /*width: auto;*/
+  white-space: nowrap;
+}
+
 @media only screen and (min-width: 1000px) {
   .container {
     max-width: 960px;
