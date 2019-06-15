@@ -57,10 +57,12 @@ nav {
     list-style: none;
   }
 
+  nav li {
+    display: inline-block;
+  }
+
   nav a {
-    padding-top: 0.2em;
-    padding-left: 0.6em;
-    padding-right: 0.6em;
+    padding: 0.2em 0.6em 0.2em 0.6em;
     font-size: 1.2em;
     float: left;
     color: blue;
@@ -82,8 +84,7 @@ nav {
   }
 
   nav li:last-child a {
-    padding-left: 0;
-    padding-right: 0;
+    padding: 0;
   }
 
   nav li#selected a {
@@ -208,8 +209,16 @@ footer {
 }
 
 .flowImageBig {
-  width: 60%;
-  margin: 1em 1em;
+  width: 90%;
+  display: block;
+  margin: 1em auto 1em auto;
+}
+
+.centerImage {
+  width: 40%;
+  display: block;
+  border-radius: 50%;
+  margin: 1em auto 1em auto;
 }
 
 span.firstPriceColumn {
@@ -237,7 +246,7 @@ span.firstPriceColumn {
 
   /* Show all menu buttons. */
   nav li:not(:first-child) {
-    display: block;
+    display: inline-block;
   }
 
   /* Hide the drop-down. */
