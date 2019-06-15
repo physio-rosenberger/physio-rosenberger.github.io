@@ -9,6 +9,7 @@ p {
 
 h1 {
   margin-top: 1.5em;
+  margin-bottom: 0.5em;
   font-size: 1.5rem;
   clear: both;
 }
@@ -17,6 +18,10 @@ h2 {
   margin-top: 1em;
   font-size: 1.2rem;
   clear: both;
+}
+
+article {
+  margin-top: 1em;
 }
 
 table {
@@ -120,6 +125,7 @@ nav {
   flex: 1;
   order: 1;
   margin-bottom: 1em;
+  text-align: center;
 }
 
 .welcomeRight {
@@ -132,23 +138,19 @@ nav {
   }
 
 .welcomeHeader {
-  display: flex;
-  justify-content: center;
+  display: inline-block;
+  margin: 0 auto 0 auto;
 }
 
 .headerLogo {
-  flex: 0;
+  float: left;
   margin-top: 0.5em;
-  margin-right: 2em;
-  text-decoration: none;
+  margin-right: 1.5em;
+  height: 7rem;
 }
 
-  .headerLogo > img {
-    height: 8em;
-  }
-
 .headerText {
-  flex: 0 1 auto;
+  float: left;
   font-weight: lighter;
   text-align: center;
 }
@@ -163,6 +165,7 @@ nav {
 }
 
 .welcomeText {
+  clear: both;
   margin: 40px 0 0 0;
   text-align: center;
 }
@@ -170,6 +173,7 @@ nav {
 footer {
   width: 100%;
   font-size: 0.8rem;
+  color: #a0a0a0;
 }
 
 .contact-Address {
@@ -187,20 +191,30 @@ footer {
 }
 
 .wrappingText {
-  width: 100%;
-  float: left;
 }
 
-.flowText {
+.flowTextLeft {
   width: 100%;
   clear: both;
   float: left;
 }
 
-.wrappedImage {
+.imageRight {
   width: 40%;
   float: right;
-  margin: 1em 0 0.5em 1em;
+  margin-left: 1em;
+}
+
+.flowTextRight {
+  width: 100%;
+  clear: both;
+  float: right;
+}
+
+.imageLeft {
+  width: 30%;
+  float: left;
+  margin-right: 1em;
 }
 
 .flowImage {
