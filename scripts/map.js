@@ -28,8 +28,8 @@ function showMap(lat, lng) {
   map.addLayer(markers);
 
   var size = new OpenLayers.Size(128, 100);
-  var offset = new OpenLayers.Pixel(-size.w/2, -size.h);
-  var icon = new OpenLayers.Icon('images/marker.png', size, offset);
+  var offset = new OpenLayers.Pixel(-size.w / 2, -size.h);
+  var icon = new OpenLayers.Icon('https://physio-rosenberger.github.io/images/Marker.png', size, offset);
   markers.addMarker(new OpenLayers.Marker(lonLat, icon));
 }
 
