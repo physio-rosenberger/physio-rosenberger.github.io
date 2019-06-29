@@ -57,6 +57,7 @@ html, body {
   background: white;
   margin: 0 auto;
   padding: 1em;
+  overflow: hidden; /* make sure floated children contribute to size of container */
 }
 
 nav {
