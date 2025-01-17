@@ -22,7 +22,7 @@ function includeNavigation() {
   var html = [
     '<ul>',
     '<li><a href="index.html">Start</a></li>',
-    '<li><a href="Leistungen.html">Leistungen und Preise</a></li>',
+    '<li><a href="Leistungen.html">Leistungen</a></li>',
     '<li><a href="Schwerpunkte.html">Schwerpunkte</a></li>',
     '<li><a href="Praxis.html">Meine Praxis</a></li>',
     '<li><a href="UeberMich.html">Über mich</a></li>',
